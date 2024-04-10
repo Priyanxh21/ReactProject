@@ -4,21 +4,24 @@ import DataBinding from "./containers/Databinding";
 import Users from "./containers/Users";
 import{Routes,NavLink,Route} from 'react-router-dom';
 
+
 function App() {
   return (
     <div>
-      <nav className="navbar nabar=expand navbar-light bg-light">
-        <ul className="nav navbar-nav">
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/">Jsx  </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav-link" to="/binding">DataBinding</NavLink>
-          </li>
-          <li>
-            <NavLink className="nav-link" to="/users">Users</NavLink>
-          </li>
-        </ul>
+      <nav className="navbar navbar-expand navbar-light bg-light">
+        <div className="container">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/">Jsx  </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/binding">DataBinding</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/users">Users</NavLink>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div className="container">
       <Routes>
@@ -30,5 +33,6 @@ function App() {
     </div>
   )
 }
+
 
 export default App;
