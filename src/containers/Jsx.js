@@ -19,7 +19,7 @@ let num=6;
 function Jsx() {
   return (
     <div className="App">
-      <h2>Booga BOOGA {name}</h2>
+      <h2>{name} loves you muuuhhaaaa</h2>
       <div>
       <h2>If Else Statements</h2>
       {CheckEvenOrOdd(19)}
